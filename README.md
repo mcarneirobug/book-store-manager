@@ -1,4 +1,3 @@
-# book-store-manager
 <h1 align="center">
     <span href="">Book Store Manager</span>
 </h1>
