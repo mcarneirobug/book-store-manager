@@ -1,6 +1,7 @@
 package br.com.matheussantos.bookstoremanager.books.entity;
 
 import br.com.matheussantos.bookstoremanager.author.entity.Author;
+import br.com.matheussantos.bookstoremanager.entity.Auditable;
 import br.com.matheussantos.bookstoremanager.publishers.entity.Publisher;
 import br.com.matheussantos.bookstoremanager.users.entity.User;
 import lombok.AllArgsConstructor;
@@ -15,7 +16,7 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "book")
-public class Book {
+public class Book extends Auditable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
