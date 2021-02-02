@@ -1,2 +1,15 @@
-package br.com.matheussantos.bookstoremanager.users;public class Gender {
+package br.com.matheussantos.bookstoremanager.users.enums;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+
+@Getter
+@AllArgsConstructor
+public enum Gender {
+
+    MALE("Male"),
+    FEMALE("Female");
+
+    private String description;
+
 }
