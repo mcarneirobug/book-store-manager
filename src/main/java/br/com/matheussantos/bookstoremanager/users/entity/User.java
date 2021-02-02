@@ -1,6 +1,7 @@
 package br.com.matheussantos.bookstoremanager.users.entity;
 
 import br.com.matheussantos.bookstoremanager.books.entity.Book;
+import br.com.matheussantos.bookstoremanager.entity.Auditable;
 import br.com.matheussantos.bookstoremanager.users.enums.Gender;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -16,7 +17,7 @@ import java.util.List;
 
 @Entity
 @Table(name = "user")
-public class User {
+public class User extends Auditable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

@@ -1,6 +1,7 @@
 package br.com.matheussantos.bookstoremanager.publishers.entity;
 
 import br.com.matheussantos.bookstoremanager.books.entity.Book;
+import br.com.matheussantos.bookstoremanager.entity.Auditable;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -13,7 +14,7 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-public class Publisher {
+public class Publisher extends Auditable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
