@@ -4,6 +4,7 @@ import br.com.matheussantos.bookstoremanager.books.entity.Book;
 import br.com.matheussantos.bookstoremanager.entity.Auditable;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
@@ -12,6 +13,8 @@ import java.util.List;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@EqualsAndHashCode(callSuper = true)
+
 @Entity
 public class Author extends Auditable {
 
