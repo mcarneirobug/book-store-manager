@@ -5,12 +5,14 @@ import br.com.matheussantos.bookstoremanager.entity.Auditable;
 import br.com.matheussantos.bookstoremanager.users.enums.Gender;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.time.LocalDate;
 import java.util.List;
 
+@EqualsAndHashCode(callSuper = true)
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
